@@ -1,0 +1,83 @@
+.header {
+    background-color: #499ef9; 
+    padding: 20px; 
+    text-align: center; 
+    color: white; 
+    font-size: 20px; 
+    transition: background-color 0.5s; 
+    
+    input {
+      background-color: #f2f2f2;
+      border: none; 
+      padding: 15px; 
+      width: 500px; 
+      margin-right: 10px; 
+      border-radius: 5px; 
+    }
+  }
+  
+  /* Add hover effect */
+  .header:hover {
+    background-color: #007bff; 
+  }
+  
+  /* Add animation for input field */
+  .input-animation {
+    animation: inputAnimation 0.5s ease-in-out;
+  }
+  
+  @keyframes inputAnimation {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+
+  /* Media Query for 400px */
+@media (max-width: 400px) {
+  .header {
+    padding: 15px;
+    font-size: 18px;
+    
+    input {
+      width: 30px;
+      padding: 6px;
+      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: 10px; 
+    }
+  }
+}
+
+/* Media Query for 600px */
+@media (max-width: 600px) {
+  .header {
+    padding: 15px;
+    font-size: 16px;
+    
+    input {
+      width: 60px;
+      padding: 7px;
+      margin-right: 0;
+    }
+  }
+}
+
+
+/* Media Query for 726px */
+@media (max-width: 726px) {
+  .header {
+    padding: 15px;
+    font-size: 18px;
+    
+    input {
+      width: 70%;
+      margin-right: 0;
+    }
+  }
+}

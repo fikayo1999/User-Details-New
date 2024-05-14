@@ -1,0 +1,11 @@
+<div class="header">
+    <input type="text" placeholder="Search by User ID" (input)="searchUsers($event.target.value)">
+
+    <div *ngIf="userData">
+        <h3>User Details</h3>
+        <p>ID: {{ userData.id }}</p>
+        <p>First Name: {{ userData.first_name }}</p>
+        <p>Last Name: {{ userData.last_name }}</p>
+      </div>
+</div>
+  

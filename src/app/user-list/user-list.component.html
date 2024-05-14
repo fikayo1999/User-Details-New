@@ -1,0 +1,20 @@
+
+<div class="user-list-container"> 
+  <h2>Maids User's List</h2>
+  <div class="user-list">
+    <div *ngFor="let user of users">
+      
+      <a *ngIf="user.id" [routerLink]="['/user-details', user.id]" class="user-card">
+        <img [src]="user.avatar" alt="Avatar">
+        <div class="user-name">{{ user.first_name }} {{ user.last_name }}</div>
+        <div class="user-id">ID: {{ user.id }}</div>
+      </a>
+    </div> 
+  </div>
+  <div class="pagination">
+    <button (click)="prevPage()" [disabled]="currentPage === 1">Previous</button>
+    <span class="move">{{ currentPage }}</span>
+    <button (click)="nextPage()">Next</button>
+  </div>
+</div>  
+  
